@@ -11,5 +11,6 @@ services:
       - net_admin
       - sys_module
     privileged: true
+    restart: always
     image: tailscale/tailscale
     command: ash connect.sh
